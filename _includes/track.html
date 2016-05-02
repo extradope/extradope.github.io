@@ -1,0 +1,6 @@
+<audio preload="auto" controls>
+	<source src="{{site.url}}{{site.baseurl}}/audio/{{page.track}}.mp3">
+</audio>
+<script>{% include jquery.js %}</script>
+<script>{% include audio-player.js %}</script>
+<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>

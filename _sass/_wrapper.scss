@@ -1,0 +1,15 @@
+.wrapper {
+    max-width: $large-width;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+
+    &--wide {
+        max-width: 60em;
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        overflow: hidden;
+    }
+}
