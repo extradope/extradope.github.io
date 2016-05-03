@@ -3,3 +3,7 @@ layout: page
 ---
 <h1>Episode guide</h1>
 
+{% for post in site.posts %}
+	<h4>{{post.title}}</h4>
+	<small class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</small>
+{% endfor %}
