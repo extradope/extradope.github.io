@@ -79,6 +79,3 @@ DEPENDENCIES
   guard-livereload
   jekyll
   jekyll-paginate
-
-BUNDLED WITH
-   1.11.2
