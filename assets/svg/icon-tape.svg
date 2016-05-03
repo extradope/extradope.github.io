@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="2" y="3.55271368e-15" width="40" height="21" rx="1"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="40" height="21" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="1" y="0.5" width="23" height="6" rx="2"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="23" height="6" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="10" y="2" width="24" height="1"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="24" height="1" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <path d="M0.488457781,1.51448487 C0.483070196,1.23802341 0.70407041,1.01390711 0.98731463,1.01390711 L0.941781456,1.01390711 C1.22268007,1.01390711 1.4514591,1.24332175 1.4527391,1.51886868 L1.54064641,20.442677 C1.54320966,20.9944689 1.99314035,21.4390446 2.54963622,21.4356401 L38.5920095,21.2151378 C38.869484,21.2134402 39.0944216,21.4439977 39.0944216,21.7120641 L39.0944216,21.7120641 C39.0944216,21.9882065 38.8700599,22.2114414 38.5974003,22.2106848 L1.89198377,22.1088192 C1.33845916,22.107283 0.881153731,21.6654986 0.8701902,21.10291 L0.488457781,1.51448487 Z" id="path-7"></path>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="38.6060603" height="21.1967796" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <rect id="path-9" x="14" y="4" width="16" height="1"></rect>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="16" height="1" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tape">
+            <g id="Group-2" transform="translate(24.901349, 26.910769) rotate(-41.000000) translate(-24.901349, -26.910769) translate(3.901349, 15.410769)">
+                <path d="M6.75476074,17.4425802 C6.89020264,17.1981499 7.2242291,17 7.49567625,17 L36.5043238,17 C36.7780782,17 37.1075287,17.1940557 37.2452393,17.4425802 L39,20.609375 L5,20.609375 L6.75476074,17.4425802 Z" id="Triangle-1" stroke="#FF4E2C" stroke-width="0.5"></path>
+                <use id="Rectangle-1" stroke="#FF4E2C" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                <g id="Group" transform="translate(9.000000, 7.000000)" stroke="#637587">
+                    <use id="Rectangle-2" mask="url(#mask-4)" xlink:href="#path-3"></use>
+                    <circle id="Oval-1" fill="#FBFBFB" cx="2.5" cy="3.5" r="2.5"></circle>
+                    <circle id="Oval-1" fill="#FBFBFB" cx="22.5" cy="3.5" r="2.5"></circle>
+                </g>
+                <use id="Rectangle-3" stroke="#FF4E2C" mask="url(#mask-6)" stroke-width="2" fill="#637587" xlink:href="#path-5"></use>
+                <use id="Combined-Shape" stroke="#637587" mask="url(#mask-8)" stroke-width="2" xlink:href="#path-7"></use>
+                <use id="Rectangle-3" stroke="#FF4E2C" mask="url(#mask-10)" stroke-width="2" fill="#637587" xlink:href="#path-9"></use>
+            </g>
+        </g>
+    </g>
+</svg>

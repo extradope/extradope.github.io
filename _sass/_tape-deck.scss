@@ -1,0 +1,12 @@
+.tape-deck {
+	display: flex;
+	&-title{
+		order: 2;
+
+	}
+	&-icon{
+		order: 1;
+		max-width: 2em;
+		margin-right: .5em;
+	}
+}
