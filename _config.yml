@@ -14,7 +14,7 @@ defaults:
       path: ""
       type: posts
     values:
-      permalink: /episodes/:year/:month/:day/:title
+      permalink: /tapes/:year/:month/:day/:title
 
 
 
