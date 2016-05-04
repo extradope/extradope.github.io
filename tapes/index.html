@@ -5,7 +5,7 @@ layout: page
 
 {% for post in site.posts %}
 	<div class="tape-deck">
-		<h4 class="tape-deck-title">{{post.title}}</h4>
+		<a class="tape-deck-title" href="{{ post.url | prepend: site.baseurl }}"><h4>{{post.title}} &#9656;</h4></a>
 		<img class="tape-deck-icon" src="../assets/svg/icon-tape.svg" alt="tape icon">
 	</div>
 		<small class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</small>

@@ -2,7 +2,11 @@
 	display: flex;
 	&-title{
 		order: 2;
+		color: $gray;
 
+		&:hover {
+			color: $tiffany;
+		}
 	}
 	&-icon{
 		order: 1;
