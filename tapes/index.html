@@ -4,9 +4,11 @@ layout: page
 <h1>Tape<span class="bold accent">DECK</span></h1>
 
 {% for post in site.posts %}
-	<div class="tape-deck">
-		<a class="tape-deck-title" href="{{ post.url | prepend: site.baseurl }}"><h4>{{post.title}} &#9656;</h4></a>
-		<img class="tape-deck-icon" src="../assets/svg/icon-tape.svg" alt="tape icon">
+	<div class="tape-item">
+		<div class="tape">
+			<a class="tape-title" href="{{ post.url | prepend: site.baseurl }}"><h4>{{post.title}} &#9656;</h4></a>
+			<img class="tape-icon" src="../assets/svg/icon-tape.svg" alt="tape icon">
+		</div>
+		<small class="tape-meta">{{ post.date | date: "%b %-d, %Y" }}</small>
 	</div>
-		<small class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</small>
 {% endfor %}

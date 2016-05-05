@@ -1,4 +1,9 @@
-.tape-deck {
+.tape {
+	&-item {
+		border-bottom: 1px dotted $gray;
+		padding-bottom: 2em;
+	}
+
 	display: flex;
 	&-title{
 		order: 2;
@@ -12,5 +17,9 @@
 		order: 1;
 		max-width: 2em;
 		margin-right: .5em;
+	}
+
+	&-meta {
+		margin-left: 3.3em;
 	}
 }
