@@ -12,7 +12,7 @@ nav {
 		background-color: $dark;
 	}
 	ul {
-		padding-top: 100px;
+		padding-top: 5em;
 		padding-right: 3em;
 		text-align: right;
 
@@ -30,25 +30,25 @@ nav {
 
 .navToggle {
 	position: absolute;
-	width: 60px;
-	height: 60px;
-	top: 20px;
+	width: 3.2em;
+	height: 3.2em;
+	top: 1em;
 	right: 2em;
 	transition-duration: 0.5s;
 
 	.icon {
 		transition-duration: 0.25s;
 		position: absolute;
-		width: 30px;
+		width: 1.5em;
 		height: 2px;
-		top: 30px;
+		top: 1.5em;
 		left: 15px;
 		background-color: $tiffany;
 
 		&:before, &:after {
 			transition-duration: 0.25s;
 			position: absolute;
-			width: 30px;
+			width: 1.5em;
 			height: 2px;
 			background-color: $tiffany;
 			content: "";
