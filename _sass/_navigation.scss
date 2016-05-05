@@ -39,7 +39,7 @@ nav {
 	.icon {
 		transition-duration: 0.25s;
 		position: absolute;
-		width: 1.5em;
+		width: 1.25em;
 		height: 2px;
 		top: 1.5em;
 		left: 15px;
@@ -48,7 +48,7 @@ nav {
 		&:before, &:after {
 			transition-duration: 0.25s;
 			position: absolute;
-			width: 1.5em;
+			width: 1.25em;
 			height: 2px;
 			background-color: $tiffany;
 			content: "";
@@ -69,18 +69,15 @@ nav {
 		cursor: pointer;
 
 		.icon {
-			&:before {
-				top: -10px;
-			}
-
-			&:after {
-				top: 10px;
+			background-color: $flamingo;
+			&:before, &:after {
+				background-color: $flamingo;
 			}
 		}
 	}
 
 	&.open {
-		transition-duration: 1s;
+		transition-duration: .25s;
 		transform: rotate(180deg);
 		-webkit-transform: rotate(180deg);
 
@@ -91,8 +88,8 @@ nav {
 			&:before {
 				transition-duration: 0.5s;
 				top: 0;
-				transform: rotate(45deg);
-				-webkit-transform: rotate(45deg);
+				transform: rotate(135deg);
+				-webkit-transform: rotate(135deg);
 				background-color: $flamingo;
 
 			}
@@ -100,8 +97,8 @@ nav {
 			&:after {
 			transition-duration: 0.5s;
 			top: 0;
-			transform: rotate(-45deg);
-			-webkit-transform: rotate(-45deg);
+			transform: rotate(-135deg);
+			-webkit-transform: rotate(-135deg);
 			background-color: $flamingo;
 
 			}
