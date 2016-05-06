@@ -9,7 +9,7 @@ nav {
 	&.open {
 		height: 12em;
 		min-height: 50vh;
-		padding-bottom: 5em;
+		padding-bottom: 8em;
 		background-color: $dark;
 	}
 	ul {
@@ -35,7 +35,7 @@ nav {
 	width: 3.2em;
 	height: 3.2em;
 	top: 1em;
-	right: .5em;
+	right: 2em;
 	transition-duration: 0.5s;
 
 	.icon {
@@ -106,4 +106,10 @@ nav {
 			}
 		}
 	}
+}
+
+@media all and (max-width: $small-width) {
+    .navToggle {
+		right: .5em;
+    }
 }
