@@ -4,7 +4,7 @@ nav {
 	background-color: $white;
 	position: relative;
 	transition-duration: 0.5s;
-	transition-timing-function: swing;
+	transition-timing-function: ease-in-out;
 	overflow: hidden;
 	&.open {
 		height: 12em;
