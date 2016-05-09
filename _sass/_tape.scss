@@ -5,6 +5,7 @@
 	}
 
 	display: flex;
+	align-items: center;
 	&-title{
 		order: 2;
 		color: $gray;
@@ -16,6 +17,7 @@
 	&-icon{
 		order: 1;
 		max-width: 2em;
+		max-height: 2em;
 		margin-right: .5em;
 	}
 
