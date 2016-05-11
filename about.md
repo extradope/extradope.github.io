@@ -1,4 +1,4 @@
 ---
 layout: page
 ---
-<h1>The<span class="bold accent">INTRO</span></h1>
+<h1 class="page-title">The<span class="bold accent">INTRO</span></h1>
