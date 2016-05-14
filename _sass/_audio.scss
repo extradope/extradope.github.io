@@ -1,4 +1,48 @@
-audio {
-	width: 100%;
-	background: $white;
+.audio {
+	&-controls {
+		border: 1px solid $dark;
+		padding: 1em;
+		border-radius: 2px;
+	}
+
+	&-nav {
+		background: $tiffany;
+		padding-bottom: 3px;
+	}
+
+	&-default-bar {
+		position: relative;
+		background: $flamingo;
+		height: .5em;
+	}
+
+	&-progress-bar {
+		position: absolute;
+		height: .5em;
+		background: $flamingo;
+	}
+
+	&-button-play {
+		border: 1px solid $tiffany;
+		background: $white;
+		height: 1.5em;
+		width: 1.5em;
+		margin-right: .35em;
+		&:active {
+			position: relative;
+			top: 2px;
+		}
+	}
+	
+	&-button-mute {
+		border: 1px solid $tiffany;
+		background: $white;
+		height: 1.5em;
+		width: 1.5em;
+		margin-right: .35em;
+		&:active {
+			position: relative;
+			top: 2px;
+		}
+	}
 }
