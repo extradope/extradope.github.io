@@ -39,6 +39,9 @@
 			position: relative;
 			top: 2px;
 		}
+		&:focus {
+			outline: none;
+		}
 	}
 	
 	&-button-mute {
@@ -55,6 +58,9 @@
 		&:active {
 			position: relative;
 			top: 2px;
+		}
+		&:focus {
+			outline: none;
 		}
 	}
 }
