@@ -4,7 +4,7 @@ email: makertolentino@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Audio documentaries of the life and times of hip-hop artist, Son of Ran
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://extradope.github.io" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 twitter_username: techtolentino
 github_username:  techtolentino
 
