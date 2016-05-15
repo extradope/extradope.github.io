@@ -1,8 +1,10 @@
 .audio {
 	&-controls {
 		border: 1px solid $dark;
-		padding: 1em;
-		border-radius: 2px;
+		padding: 1em 1em .5em 1em;
+	    display: flex;
+	    border-radius: 2px;
+	    align-items: center;
 	}
 
 	&-nav {
@@ -23,11 +25,16 @@
 	}
 
 	&-button-play {
-		border: 1px solid $tiffany;
+		border: none;
 		background: $white;
 		height: 1.5em;
 		width: 1.5em;
 		margin-right: .35em;
+		background-image: url(../assets/svg/play.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		padding: 1px;
 		&:active {
 			position: relative;
 			top: 2px;
@@ -35,11 +42,16 @@
 	}
 	
 	&-button-mute {
-		border: 1px solid $tiffany;
+		border: none;
 		background: $white;
 		height: 1.5em;
 		width: 1.5em;
 		margin-right: .35em;
+		background-image: url(../assets/svg/mute.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		padding: 1px;		
 		&:active {
 			position: relative;
 			top: 2px;
