@@ -1,40 +1,45 @@
+audio {
+	display: none;
+}
 .audio {
 	&-controls {
-		border: 1px solid $dark;
-		padding: 1em 1em .5em 1em;
+		border: 1px dotted $gray;
+		padding: .5em 1em .5em 1em;
 	    display: flex;
 	    border-radius: 2px;
 	    align-items: center;
 	}
 
-	&-nav {
-		background: $tiffany;
-		padding-bottom: 3px;
+	&-current-time, &-total-time {
+		font-size: 0.875em;
 	}
-
 	&-default-bar {
 		position: relative;
-		background: $flamingo;
-		height: .5em;
+		background: $gray;
+		height: .25em;
+		margin-right: 1em;
+		width: 100%;
+		border-radius: 4px;
 	}
 
 	&-progress-bar {
 		position: absolute;
-		height: .5em;
+		height: .25em;
+		margin-right: .75em;
 		background: $flamingo;
+		width: 0%;
 	}
 
 	&-button-play {
 		border: none;
 		background: $white;
-		height: 1.5em;
-		width: 1.5em;
-		margin-right: .35em;
+		height: 1.75em;
+		width: 1.75em;
+		margin-right: .5em;
 		background-image: url(../assets/svg/play.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
-		padding: 1px;
 		&:active {
 			position: relative;
 			top: 2px;
@@ -47,14 +52,13 @@
 	&-button-mute {
 		border: none;
 		background: $white;
-		height: 1.5em;
-		width: 1.5em;
-		margin-right: .35em;
+		height: 1.75em;
+		width: 1.75em;
+		margin-right: .75em;
 		background-image: url(../assets/svg/sound.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
-		padding: 1px;		
 		&:active {
 			position: relative;
 			top: 2px;

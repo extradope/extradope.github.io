@@ -2,15 +2,13 @@
 	<source src="{{site.url}}{{site.baseurl}}/audio/{{page.track}}.mp3">
 </audio>
 <div class="audio-nav">
-	<div class="audio-default-bar">
-		<div class="audio-progress-bar" id="progressBar">
-			
+	<div class="audio-controls">
+		<button class="audio-button-play" id="playButton" type="button"></button>
+		<button class="audio-button-mute" id="muteButton" type="button"></button>
+		<div class="audio-default-bar" id="defaultBar">
+			<div class="audio-progress-bar" id="progressBar"></div>
 		</div>
-		<div class="audio-controls">
-			<button class="audio-button-play" id="playButton" type="button"></button>
-			<button class="audio-button-mute" id="muteButton" type="button"></button>
-			<span class="audio-current-time" id="currentTime">0:00</span>/<span class="audio-total-time" id="totalTime">0:00</span>
-		</div>
+		<span class="audio-current-time" id="currentTime">0:00</span>/<span class="audio-total-time" id="totalTime">0:00</span>
 	</div>
 </div>
 <script type="text/javascript" src="{{site.url}}/js/controls.js"></script>

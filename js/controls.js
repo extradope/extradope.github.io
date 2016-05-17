@@ -2,7 +2,10 @@ var audioPlayer = document.getElementById('audioPlayer'),
 	playButton = document.getElementById('playButton'),
 	muteButton = document.getElementById('muteButton'),
 	totalTime = document.getElementById('totalTime'),
-	currentTime = document.getElementById('currentTime');
+	currentTime = document.getElementById('currentTime'),
+	barSize = 100,
+	bar = document.getElementById('defaultBar'),
+	progressBar = document.getElementById('progressBar');
 
 audioPlayer.addEventListener("loadedmetadata", changeDuration);
 
@@ -43,15 +46,22 @@ function update() {
 	if (!audioPlayer.ended) {
 		var playedMinutes = parseInt(audioPlayer.currentTime/60);
 		var playedSeconds;
-		if (parseInt(audioPlayer.currentTime%60) < 10) {
-			playedSeconds = '0' + parseInt(audioPlayer.currentTime%60);
-		}
-		else {
-			playedSeconds = parseInt(audioPlayer.currentTime%60);
-		}
+			if (parseInt(audioPlayer.currentTime%60) < 10) {
+				playedSeconds = '0' + parseInt(audioPlayer.currentTime%60);
+			}
+			else {
+				playedSeconds = parseInt(audioPlayer.currentTime%60);
+			}
 		currentTime.innerHTML = playedMinutes + ':' + playedSeconds;
+
+		var size = parseInt(audioPlayer.currentTime*barSize/audioPlayer.duration);
+		console.log(size);
+		progressBar.style.width = size + "%";
 	}
 	else {
 		currentTime.innerHTML = '0.00';
+		playButton.style.backgroundImage = 'url(../../../../assets/svg/play.svg)';
+		progressBar.style.width = "0%";
+		window.clearInterval(updateTime);
 	}
 }
