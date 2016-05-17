@@ -1,25 +1,30 @@
 .hero {
-	min-height: 50vh;
+    background: url('../assets/distort-wall.jpg') no-repeat 50% 50% fixed; 
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    min-height: 90vh;
+    padding-top: 10em;
 	& h1 {
 		font-size: 6.441em;
-		margin-top: 1.5em;
 	}
 }
 
 @media all and (max-width: $medium-width) {
     .hero {
+        padding-top: 12em;
     	& h1 {
     		font-size: 4.441em;
-    		margin-top: 2em;
     	}
     }
 }
 
 @media all and (max-width: $small-width) {
     .hero {
+        padding-top: 13em;
     	& h1 {
     		font-size: 2.441em;
-    		margin-top: 3em;
     	}
     }
 }
