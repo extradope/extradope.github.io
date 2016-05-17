@@ -1,9 +1,25 @@
 .hero {
-    &-image {
-        max-width: 90%;
-        width: 60em;
-        display: block;
-        margin: 0 auto;
-        padding-top: 3em;
+	min-height: 95vh;
+	& h1 {
+		font-size: 6.441em;
+		margin-top: 2em;
+	}
+}
+
+@media all and (max-width: $medium-width) {
+    .hero {
+    	& h1 {
+    		font-size: 4.441em;
+    		margin-top: 3em;
+    	}
+    }
+}
+
+@media all and (max-width: $small-width) {
+    .hero {
+    	& h1 {
+    		font-size: 2.441em;
+    		margin-top: 5em;
+    	}
     }
 }

@@ -42,7 +42,13 @@ function muteOrUnmute () {
 function update() {
 	if (!audioPlayer.ended) {
 		var playedMinutes = parseInt(audioPlayer.currentTime/60);
-		var playedSeconds = parseInt(audioPlayer.currentTime%60);
+		var playedSeconds;
+		if (parseInt(audioPlayer.currentTime%60) < 10) {
+			playedSeconds = '0' + parseInt(audioPlayer.currentTime%60);
+		}
+		else {
+			playedSeconds = parseInt(audioPlayer.currentTime%60);
+		}
 		currentTime.innerHTML = playedMinutes + ':' + playedSeconds;
 	}
 	else {
